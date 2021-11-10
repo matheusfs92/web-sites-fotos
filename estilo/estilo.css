@@ -84,4 +84,6 @@ h1 {
 }
 
 /* vamos mexer nas img=fotos*/
-img {max-width: 100%;}
+img {max-width: 100%;
+display:block}
+.lobo1 {width: 150px;}
