@@ -2,7 +2,9 @@ body,
 ul,
 li,
 p {
-    margin: 0px;
+    /* margin: 1px; vai dar um pequeno espaço na caixa logo, sobre... (testa colocando um numero maior)*/
+    margin: 1px;
+    /*  padding: 0px; faz quase a mesma coisa*/
     padding: 0px;
     list-style: none;
     font-size: 1.2rem;
@@ -18,19 +20,17 @@ a {
     color: rgb(238, 237, 243);
 }
 
-h1 {
-    text-align: center;
-    margin-top: 100px;
-}
-
 .header {
-    /*vai deixar o linha preta do logo, sobre, produtos... - background */
+    /*background vai deixar o linha preta do logo, sobre, produtos...*/
     background: #1d1e20;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    /*o padding: 20px vai deixar a linha preta maior(testa)*/
     padding: 20px;
+    /*o border vai colocar uma linha sobre caixa preta ops, sempre colocar o px*/
+    border:rgb(248, 4, 4) 2px solid
 }
 
 .menu {
@@ -46,6 +46,18 @@ h1 {
 
 /* Sessões De Fotos - as fotos */
 
+h1 {
+    /*vai alinhar meu texto Sessões De Fotos no meio da pagina*/
+    text-align: center;
+    margin-top: 5px;
+    background:rgb(243, 7, 7)
+}
+
+h1 {
+/*por algum motivo se colocar junto com o h1 vai dar algum erro entao criei outro para testar*/
+    border:rgb(15, 15, 15) 2px solid
+}
+
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -56,5 +68,6 @@ h1 {
 
 .flex>div {
     flex: 1 1 200px;
-    margin: 10px;
+    /*vai mover as fotos para direita margin: caso coloque um numero muito grande assim 100px;*/
+    margin: 0px;
 }
