@@ -84,6 +84,13 @@ h1 {
 }
 
 /* vamos mexer nas img=fotos*/
-img {max-width: 100%;
-display:block}
+
+/* max-width: 50% vai diminuir o tamanho das fotos*/
+img {max-width: 50%;
+display:block
+}
+/* colocar uma cor no fundo para saber como ta o grid*/
+.flex {background:rgb(170, 172, 172)}
+
+/* vamos mexer so na primeira img*/
 .lobo1 {width: 150px;}
