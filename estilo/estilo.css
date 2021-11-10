@@ -82,3 +82,6 @@ h1 {
     /*vai mover as fotos para direita (margin:) caso coloque um numero muito grande assim 100px;*/
     margin: 0px;
 }
+
+/* vamos mexer nas img=fotos*/
+img {max-width: 100%;}
