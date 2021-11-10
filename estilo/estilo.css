@@ -79,6 +79,6 @@ h1 {
 
 .flex>div {
     flex: 1 1 200px;
-    /*vai mover as fotos para direita margin: caso coloque um numero muito grande assim 100px;*/
+    /*vai mover as fotos para direita (margin:) caso coloque um numero muito grande assim 100px;*/
     margin: 0px;
 }
