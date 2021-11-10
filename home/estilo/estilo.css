@@ -2,7 +2,9 @@ body,
 ul,
 li,
 p {
+    /* margin: 1px; vai dar um pequeno espaço na caixa logo, sobre... (testa colocando um numero maior)*/
     margin: 0px;
+    /*  padding: 0px; faz quase a mesma coisa*/
     padding: 0px;
     list-style: none;
     font-size: 1.2rem;
@@ -18,18 +20,18 @@ a {
     color: rgb(238, 237, 243);
 }
 
-h1 {
-    text-align: center;
-    margin-top: 100px;
-}
-
 .header {
+    /*background vai deixar o linha preta do logo, sobre, produtos...*/
     background: #1d1e20;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    /*o padding: 20px vai deixar a linha preta maior(testa)*/
+    /*mudei para 5*/
+    padding: 5px;
+    /*o border vai colocar uma linha sobre caixa preta ops, sempre colocar o px*/
+    border:rgb(248, 4, 4) 2px solid
 }
 
 .menu {
@@ -42,3 +44,41 @@ h1 {
 }
 
 /*daqui para cima é o inicio - logo, sobre, produto, contato*/
+
+/* Sessões De Fotos - as fotos */
+
+h1 {
+    /*vai alinhar meu texto >>>Sessões De Fotos<<< no meio da pagina*/
+    text-align: center;
+    margin-top: 2px;
+    background:rgb(243, 7, 7)
+}
+
+h1 {
+/*por algum motivo se colocar junto com o h1 vai dar algum erro entao criei outro para testar*/
+    border:rgb(15, 15, 15) 1px solid
+}
+
+
+ /* por algum motivo tive que fazer 4 logo para funcionar */
+.logo {
+    background:rgb(236, 236, 5)}
+/* padding: 15px para aumentar o tamanho da caixa */
+.logo { padding: 15px}
+.logo {color: black;}
+/* border-radius: 10% é para deixar arredondado  */
+.logo {border-radius: 10%;}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    /* max-width: 1000px centralizar o foto */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.flex>div {
+    flex: 1 1 200px;
+    /*vai mover as fotos para direita (margin:) caso coloque um numero muito grande assim 100px;*/
+    margin: 0px;
+}
