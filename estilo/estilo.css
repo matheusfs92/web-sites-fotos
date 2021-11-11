@@ -12,10 +12,11 @@ p {
 }
 
 
-/*margin: bottom 10 serve para separar os elemento */
+/*margin: bottom 10 serve para separar os elemento 
 body {
     margin: bottom 10px;
 }
+*/
 
 a {
     text-decoration: none;
@@ -75,7 +76,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     /* max-width: 1000px centralizar o foto */
-    max-width: 1000px;
+    /*max-width: 1000px;*/
     margin: 0 auto;
 }
 
@@ -85,17 +86,23 @@ h1 {
     margin: 0px;
 }
 
-/* vamos mexer nas img=fotos*/
 
-/* max-width: 50% vai diminuir o tamanho das fotos*/
-img {max-width: 100%;
+
+/*max-width: 50% vai diminuir o tamanho das fotos*/
+img {max-width: 320px;
 display:block
 }
+
+
+
 /* colocar uma cor no fundo para saber como ta o grid*/
 .flex {background:rgb(170, 172, 172)}
 
-/* vamos mexer so na primeira img*/
+/* vamos mexer so na primeira img
 .lobo1 {width: 150px;}
+
+ignorar, so ja diz ai para quer serve
+*/
 
 /*vamos criar um botao*/
 .clique
@@ -107,3 +114,8 @@ border:rgb(0, 0, 0) 2px solid;
 border-radius: 15%; }
 
 
+/* vai pegar as colunas vai colocar no lado */
+.grid1{display: grid;
+grid-template-columns:auto auto;
+
+}
