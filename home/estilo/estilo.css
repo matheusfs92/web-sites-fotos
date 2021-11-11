@@ -11,8 +11,10 @@ p {
     font-family: Arial;
 }
 
+
+/*margin: bottom 10 serve para separar os elemento */
 body {
-    margin-bottom: 100px;
+    margin: bottom 10px;
 }
 
 a {
@@ -82,3 +84,26 @@ h1 {
     /*vai mover as fotos para direita (margin:) caso coloque um numero muito grande assim 100px;*/
     margin: 0px;
 }
+
+/* vamos mexer nas img=fotos*/
+
+/* max-width: 50% vai diminuir o tamanho das fotos*/
+img {max-width: 100%;
+display:block
+}
+/* colocar uma cor no fundo para saber como ta o grid*/
+.flex {background:rgb(170, 172, 172)}
+
+/* vamos mexer so na primeira img*/
+.lobo1 {width: 150px;}
+
+/*vamos criar um botao*/
+.clique
+{background:rgb(245, 229, 9) ;
+padding: 2px 7px;
+color: rgb(7, 7, 7);
+border:rgb(0, 0, 0) 2px solid;
+/* border-radius: 10% é para deixar arredondado  */
+border-radius: 15%; }
+
+
