@@ -154,7 +154,8 @@ body {
     }
 
     .gallery__overlay {
-        font-size: 1.25rem;
+        font-size: 1.25rem;}
+    }
 /*
      Gallery Layout 
     .gallery__item--1 {
@@ -188,6 +189,4 @@ body {
     }
 
     .gallery__overlay {
-        font-size: 1.25rem;
-    }*/
-}
+        font-size: 1.25rem;}
