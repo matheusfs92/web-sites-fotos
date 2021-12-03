@@ -1,26 +1,8 @@
-body,
-ul,
-li,
-p {
-    /* margin: 1px; vai dar um pequeno espaço na caixa logo, sobre... (testa colocando um numero maior)*/
-    margin: 0px;
-    /*  padding: 0px; faz quase a mesma coisa*/
-    padding: 0px;
-    list-style: none;
-    font-size: 1.2rem;
-    font-family: Arial;
-}
-
-
-/*margin: bottom 10 serve para separar os elemento 
-body {
-    margin: bottom 10px;
-}
-*/
-
 *,
 *:before,
 *:after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -36,18 +18,22 @@ body {
 }
 
 /* Gallery */
-.gallery {
+.galeria {
+    /* mexer no tamanho das img*/
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 12.5rem);
-    gap: .5rem;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(0 , 17rem);
+    gap: .1rem;
 }
 
-/* Gallery Layout */
+
+
+/* Gallery Layout 
 .gallery__item--1 {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
 }
+
 
 .gallery__item--2 {
     grid-column: 1 / span 1;
@@ -58,6 +44,7 @@ body {
     grid-column: 2 / span 1;
     grid-row: 1 / span 2;
 }
+
 
 .gallery__item--4 {
     grid-column: 3 / span 1;
@@ -73,6 +60,9 @@ body {
     grid-column: 3 / span 1;
     grid-row: 4 / span 1;
 }
+
+*/
+
 
 /* Gallery Link */
 .gallery__link {
@@ -99,7 +89,7 @@ body {
     background: rgba(0, 0, 0, 0.4);
     font-size: 1.5rem;
     color: #fff;
-    font-weight: 700;
+    font-weight: 100;
     text-transform: uppercase;
 
     opacity: 0;
@@ -156,9 +146,11 @@ body {
 
 .gallery__link:hover .gallery__image {
     transform: scale(1.2);
-    filter: blur(2px);
+    filter: blur(1px);
 }
 
+
+/*
 @media screen and (max-width: 60rem) {
     .wrapper {
         padding: 1rem;
@@ -168,7 +160,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* Gallery Layout */
+     Gallery Layout 
     .gallery__item--1 {
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
@@ -201,23 +193,5 @@ body {
 
     .gallery__overlay {
         font-size: 1.25rem;
-    }
-}
-
-@media screen and (max-width: 35rem) {
-    .gallery {
-        display: block;
-    }
-
-    .gallery__item {
-        margin: .5rem;
-    }
-
-    .gallery__link {
-        height: 80vw;
-    }
-
-    .gallery__overlay {
-        font-size: 1rem;
     }
 }
