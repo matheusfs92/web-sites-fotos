@@ -143,16 +143,19 @@ body {
 }
 
 
-/*
+
 @media screen and (max-width: 60rem) {
     .wrapper {
         padding: 1rem;
     }
 
-    .gallery {
+    .galeria {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .gallery__overlay {
+        font-size: 1.25rem;
+/*
      Gallery Layout 
     .gallery__item--1 {
         grid-column: 1 / span 1;
@@ -186,5 +189,5 @@ body {
 
     .gallery__overlay {
         font-size: 1.25rem;
-    }
+    }*/
 }
